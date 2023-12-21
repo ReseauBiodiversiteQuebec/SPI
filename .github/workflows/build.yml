@@ -1,16 +1,16 @@
-# name: Build report
+name: Build report
 
-# on:
-#   push:
-#     branches:
-#       - quarto-web
+on:
+  push:
+    branches:
+      - quarto-web
 
-# jobs:
-#   build_deploy:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Check out repository
-#         uses: actions/checkout@v3
+jobs:
+  build_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
 
 #       - name: Install quarto
 #         uses: quarto-dev/quarto-actions/setup@v2
