@@ -6,6 +6,7 @@ on:
       - section_occurences # Trigger the workflow on pushes to section branches
       - section_ranges
       - section_bellavance
+      - quarto-web
 
 jobs:
   update-content:
