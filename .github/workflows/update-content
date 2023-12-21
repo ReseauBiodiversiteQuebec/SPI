@@ -1,0 +1,88 @@
+name: Update Content
+
+on:
+  push:
+    branches:
+      - section_occurences # Trigger the workflow on pushes to section branches
+      - section_ranges
+      - section_bellavance
+
+jobs:
+  update-content:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set Up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          tinytex: true
+
+      - name: Copy Content to Master Branch (section_occurences)
+        run: |
+          # Replace 'section-1' with the name of your section branch
+          SECTION_BRANCH='section_occurences'
+          
+          # Replace 'path/to/content' with the actual path where your content is stored in the section branch
+          SECTION_CONTENT_PATH='results'
+          
+          # Copy or merge the content from the section branch to the master branch
+          mkdir -p $SECTION_CONTENT_PATH
+          cp -r $SECTION_BRANCH/SECTION_CONTENT_PATH/* $SECTION_CONTENT_PATH/$SECTION_BRANCH/
+
+           # Copy or merge the README from the section branch to the master branch
+          cp -r $SECTION_BRANCH/README.md $SECTION_CONTENT_PATH/$SECTION_BRANCH/description.md
+          
+          # Optionally, commit and push the changes to the master branch
+          git add .
+          git commit -m "Update content from $SECTION_BRANCH"
+          git push origin quarto-web
+        env:
+          SECTION_BRANCH: ${{ github.event.ref }}
+
+        - name: Copy Content to Master Branch (section_ranges)
+        run: |
+          # Replace 'section-1' with the name of your section branch
+          SECTION_BRANCH='section_ranges'
+          
+          # Replace 'path/to/content' with the actual path where your content is stored in the section branch
+          SECTION_CONTENT_PATH='results'
+          
+          # Copy or merge the content from the section branch to the master branch
+          mkdir -p $SECTION_CONTENT_PATH
+          cp -r $SECTION_BRANCH/SECTION_CONTENT_PATH/* $SECTION_CONTENT_PATH/$SECTION_BRANCH/
+
+           # Copy or merge the README from the section branch to the master branch
+          cp -r $SECTION_BRANCH/README.md $SECTION_CONTENT_PATH/$SECTION_BRANCH/description.md
+          
+          # Optionally, commit and push the changes to the master branch
+          git add .
+          git commit -m "Update content from $SECTION_BRANCH"
+          git push origin quarto-web
+        env:
+          SECTION_BRANCH: ${{ github.event.ref }}
+
+        - name: Copy Content to Master Branch (section_bellavance)
+        run: |
+          # Replace 'section-1' with the name of your section branch
+          SECTION_BRANCH='section_bellavance'
+          
+          # Replace 'path/to/content' with the actual path where your content is stored in the section branch
+          SECTION_CONTENT_PATH='results'
+          
+          # Copy or merge the content from the section branch to the master branch
+          mkdir -p $SECTION_CONTENT_PATH
+          cp -r $SECTION_BRANCH/SECTION_CONTENT_PATH/* $SECTION_CONTENT_PATH/$SECTION_BRANCH/
+
+           # Copy or merge the README from the section branch to the master branch
+          cp -r $SECTION_BRANCH/README.md $SECTION_CONTENT_PATH/$SECTION_BRANCH/description.md
+          
+          # Optionally, commit and push the changes to the master branch
+          git add .
+          git commit -m "Update content from $SECTION_BRANCH"
+          git push origin quarto-web
+        env:
+          SECTION_BRANCH: ${{ github.event.ref }}
+

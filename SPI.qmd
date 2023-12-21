@@ -1,0 +1,34 @@
+---
+title: "Indice de protection des espèces (SPI)"
+---
+
+Le Species Protection Index (SPI) mesure la moyenne de l’habitat potentiel de plusieurs espèces qui est protégée.
+
+Cibles du cadre mondial associées : 2, 3, 4, 12, 21 
+
+
+### Exemple de résultats
+
+![Figure 1: Distribution et protection du céphalophe zébré (Cephalophus zebra), un spécialiste de la forêt tropicale menacé par la perte de son habitat. La carte montre l'aire de répartition mondiale, adaptée à l'habitat, par pays, le Liberia détenant la plus grande partie (intendance), et la variation des portions de l'aire de répartition nationale supposées protégées. Les formules de base suggèrent que 48% de l'aire de répartition mondiale est une représentation adéquate de l'aire de conservation pour cette espèce. Jetz et al. (2022).](assets/img/spi_ex_results.png)
+
+
+### Connaissances et informations nécessaires pour calculer l’indicateur 
+
+- Aire de répartition de chaque espèce 
+
+- Données spatiales environnementales et d’occurrences d’espèces 
+
+- Étendue des aires protégés 
+
+
+### Fréquence de l’indicateur 
+
+Annuel 
+
+
+### Publications et autre documentation
+
+- [https://geobon.org/ebvs/indicators/species-protection-index/](https://geobon.org/ebvs/indicators/species-protection-index/) 
+- [https://mol.org/indicators/protection/background](https://mol.org/indicators/protection/background)
+- [https://www.nature.com/articles/s41559-021-01620-y](https://www.nature.com/articles/s41559-021-01620-y) 
+

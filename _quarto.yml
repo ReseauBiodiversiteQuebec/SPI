@@ -1,0 +1,48 @@
+project:
+  type: website
+
+website:
+  title: "SPI_website"
+  image: assets/img/logo.png
+  navbar:
+    left:
+      - href: about.qmd
+        text: "À propos"
+      - href: index.qmd
+        text: "Histoire de biodiversité"
+      - href: SPI.qmd
+        text: "SPI"
+
+    tools:
+      - icon: github
+        href: https://github.com/ReseauBiodiversiteQuebec/SPI
+        text: SPI GitHub
+
+  sidebar:
+    - id: SPI
+      collapse-level: 1
+      contents:
+        - section: "SPI"
+          href: SPI.qmd
+          contents:
+            - section: "Aires de répartition"
+              href: results/section_ranges/description.md
+              contents:
+                - docs/results_ranges.qmd
+            - section: "Occurences"
+              href: results/section_occurences/description.md
+              contents:
+                - docs/results_occurences.qmd
+            - section: "Cartes de Vincent Bellavance"
+              href: results/section_bellavance/description.md
+              contents:
+                - docs/results_bellavance.qmd
+      
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
