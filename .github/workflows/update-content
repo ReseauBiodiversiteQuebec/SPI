@@ -42,7 +42,7 @@ jobs:
         env:
           SECTION_BRANCH: ${{ github.event.ref }}
 
-        - name: Copy Content to Master Branch (section_ranges)
+      - name: Copy Content to Master Branch (section_ranges)
         run: |
           # Replace 'section-1' with the name of your section branch
           SECTION_BRANCH='section_ranges'
@@ -64,7 +64,7 @@ jobs:
         env:
           SECTION_BRANCH: ${{ github.event.ref }}
 
-        - name: Copy Content to Master Branch (section_bellavance)
+      - name: Copy Content to Master Branch (section_bellavance)
         run: |
           # Replace 'section-1' with the name of your section branch
           SECTION_BRANCH='section_bellavance'
