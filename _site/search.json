@@ -74,7 +74,7 @@
     "href": "docs/results_occurences.html",
     "title": "Résultats occurrences",
     "section": "",
-    "text": "About these results"
+    "text": "SPI by Group"
   },
   {
     "objectID": "docs/results_ranges.html",
@@ -173,5 +173,26 @@
     "title": "Computation of the SPI indicator for the 1992-2017 period",
     "section": "",
     "text": "Select types of protected areas to include in the analyses"
+  },
+  {
+    "objectID": "docs/results_occurences.html#spi-par-groupe",
+    "href": "docs/results_occurences.html#spi-par-groupe",
+    "title": "Résultats occurrences",
+    "section": "",
+    "text": "SPI by Group"
+  },
+  {
+    "objectID": "docs/results_occurences.html#scores-spi",
+    "href": "docs/results_occurences.html#scores-spi",
+    "title": "Résultats occurrences",
+    "section": "Scores SPI",
+    "text": "Scores SPI"
+  },
+  {
+    "objectID": "docs/results_occurences.html#scores-spi-par-régions",
+    "href": "docs/results_occurences.html#scores-spi-par-régions",
+    "title": "Résultats occurrences",
+    "section": "Scores SPI par régions",
+    "text": "Scores SPI par régions"
   }
 ]
