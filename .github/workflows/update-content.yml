@@ -25,38 +25,35 @@ jobs:
         run: |
           SECTION_BRANCH='section_occurences'
           SECTION_CONTENT_PATH='results'
-          mkdir -p $SECTION_CONTENT_PATH/$SECTION_BRANCH/
-          cp -r $SECTION_BRANCH/$SECTION_CONTENT_PATH/* $SECTION_CONTENT_PATH/$SECTION_BRANCH/
-          cp -r $SECTION_BRANCH/README.md $SECTION_CONTENT_PATH/$SECTION_BRANCH/description.md
+          git checkout $SECTION_BRANCH -- $SECTION_CONTENT_PATH/
+          git checkout quarto-web -- $SECTION_CONTENT_PATH/$SECTION_BRANCH/
+          mv $SECTION_CONTENT_PATH/*.csv $SECTION_CONTENT_PATH/$SECTION_BRANCH/
+          mv $SECTION_CONTENT_PATH/*.png $SECTION_CONTENT_PATH/$SECTION_BRANCH/
           git add .
-          git commit -m "Update content from $SECTION_BRANCH"
+          git commit -m "Copy content from $SECTION_BRANCH to quarto-web"
           git push origin quarto-web
-        env:
-          SECTION_BRANCH: ${{ github.event.ref }}
 
       - name: Copy Content to Master Branch (section_ranges)
         run: |
           SECTION_BRANCH='section_ranges'
           SECTION_CONTENT_PATH='results'
-          mkdir -p $SECTION_CONTENT_PATH/$SECTION_BRANCH/
-          cp -r $SECTION_BRANCH/$SECTION_CONTENT_PATH/* $SECTION_CONTENT_PATH/$SECTION_BRANCH/
-          cp -r $SECTION_BRANCH/README.md $SECTION_CONTENT_PATH/$SECTION_BRANCH/description.md
+          git checkout $SECTION_BRANCH -- $SECTION_CONTENT_PATH/
+          git checkout quarto-web -- $SECTION_CONTENT_PATH/$SECTION_BRANCH/
+          mv $SECTION_CONTENT_PATH/*.csv $SECTION_CONTENT_PATH/$SECTION_BRANCH/
+          mv $SECTION_CONTENT_PATH/*.png $SECTION_CONTENT_PATH/$SECTION_BRANCH/
           git add .
-          git commit -m "Update content from $SECTION_BRANCH"
+          git commit -m "Copy content from $SECTION_BRANCH to quarto-web"
           git push origin quarto-web
-        env:
-          SECTION_BRANCH: ${{ github.event.ref }}
 
       - name: Copy Content to Master Branch (section_bellavance)
         run: |
           SECTION_BRANCH='section_bellavance'
           SECTION_CONTENT_PATH='results'
-          mkdir -p $SECTION_CONTENT_PATH/$SECTION_BRANCH/
-          cp -r $SECTION_BRANCH/$SECTION_CONTENT_PATH/* $SECTION_CONTENT_PATH/$SECTION_BRANCH/
-          cp -r $SECTION_BRANCH/README.md $SECTION_CONTENT_PATH/$SECTION_BRANCH/description.md
+          git checkout $SECTION_BRANCH -- $SECTION_CONTENT_PATH/
+          git checkout quarto-web -- $SECTION_CONTENT_PATH/$SECTION_BRANCH/
+          mv $SECTION_CONTENT_PATH/*.csv $SECTION_CONTENT_PATH/$SECTION_BRANCH/
+          mv $SECTION_CONTENT_PATH/*.png $SECTION_CONTENT_PATH/$SECTION_BRANCH/
           git add .
-          git commit -m "Update content from $SECTION_BRANCH"
+          git commit -m "Copy content from $SECTION_BRANCH to quarto-web"
           git push origin quarto-web
-        env:
-          SECTION_BRANCH: ${{ github.event.ref }}
 
