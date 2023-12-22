@@ -1,5 +1,8 @@
 ---
-title: "About"
+title: "À propos de ce site web"
 ---
 
-About this site
+[![.github/workflows/update-content.yml](https://github.com/ReseauBiodiversiteQuebec/SPI/actions/workflows/update-content.yml/badge.svg)](https://github.com/ReseauBiodiversiteQuebec/SPI/actions/workflows/update-content.yml)
+[![Build report](https://github.com/ReseauBiodiversiteQuebec/SPI/actions/workflows/build.yml/badge.svg)](https://github.com/ReseauBiodiversiteQuebec/SPI/actions/workflows/build.yml)
+
+Ce site présente les travaux réalisés pour produire une histoire de la biodiversité qui rend compte de la protection des espèces. 

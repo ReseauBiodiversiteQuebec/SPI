@@ -2,4 +2,17 @@
 title: "Résultats occurrences"
 ---
 
-About these results
+## SPI par groupe
+
+![](../results/section_occurences/SPI_by_group.png)
+
+
+## Scores SPI
+
+![](../results/section_occurences/SPI_scores.png)
+
+## Scores SPI par régions
+
+![](../results/section_occurences/SPI_regions.png)
+
+

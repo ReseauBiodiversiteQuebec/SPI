@@ -2,23 +2,29 @@ project:
   type: website
 
 website:
-  title: "SPI_website"
+  title: "SPI Québec"
   image: assets/img/logo.png
   navbar:
+    # background: light
+    logo: assets/img/logo.png
+    logo-alt: "BdQc logo."
+    title: false
+    collapse-below: lg
     left:
-      - href: about.qmd
-        text: "À propos"
-      - href: index.qmd
-        text: "Histoire de biodiversité"
-      - href: SPI.qmd
-        text: "SPI"
-
+      - text: "À propos"
+        href: about.qmd
+      - text: "Histoire de biodiversité"
+        href: index.qmd
+      - text: "SPI"
+        href: SPI.qmd
+          
     tools:
       - icon: github
         href: https://github.com/ReseauBiodiversiteQuebec/SPI
-        text: SPI GitHub
+        text: SPI GitHub        
 
   sidebar:
+    - id: "Histoire de biodiversité"
     - id: SPI
       collapse-level: 1
       contents:

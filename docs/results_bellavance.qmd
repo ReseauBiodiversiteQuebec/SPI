@@ -2,4 +2,17 @@
 title: "Résultats de Bellavance"
 ---
 
-About these results
+## SPI par groupe
+
+![](../results/section_bellavance/SPI_by_group.png)
+
+
+## Scores SPI
+
+![](../results/section_bellavance/SPI_scores.png)
+
+## Scores SPI par régions
+
+![](../results/section_bellavance/SPI_regions.png)
+
+
