@@ -29,6 +29,7 @@ jobs:
           git checkout quarto-web -- $SECTION_CONTENT_PATH/$SECTION_BRANCH/
           mv $SECTION_CONTENT_PATH/*.csv $SECTION_CONTENT_PATH/$SECTION_BRANCH/
           mv $SECTION_CONTENT_PATH/*.png $SECTION_CONTENT_PATH/$SECTION_BRANCH/
+          mv README.md $SECTION_CONTENT_PATH/$SECTION_BRANCH/description.md
           git add .
           git commit -m "Copy content from $SECTION_BRANCH to quarto-web"
           git push origin quarto-web
@@ -41,6 +42,7 @@ jobs:
           git checkout quarto-web -- $SECTION_CONTENT_PATH/$SECTION_BRANCH/
           mv $SECTION_CONTENT_PATH/*.csv $SECTION_CONTENT_PATH/$SECTION_BRANCH/
           mv $SECTION_CONTENT_PATH/*.png $SECTION_CONTENT_PATH/$SECTION_BRANCH/
+          mv README.md $SECTION_CONTENT_PATH/$SECTION_BRANCH/description.md
           git add .
           git commit -m "Copy content from $SECTION_BRANCH to quarto-web"
           git push origin quarto-web
@@ -53,6 +55,7 @@ jobs:
           git checkout quarto-web -- $SECTION_CONTENT_PATH/$SECTION_BRANCH/
           mv $SECTION_CONTENT_PATH/*.csv $SECTION_CONTENT_PATH/$SECTION_BRANCH/
           mv $SECTION_CONTENT_PATH/*.png $SECTION_CONTENT_PATH/$SECTION_BRANCH/
+          mv README.md $SECTION_CONTENT_PATH/$SECTION_BRANCH/description.md
           git add .
           git commit -m "Copy content from $SECTION_BRANCH to quarto-web"
           git push origin quarto-web
